@@ -1,5 +1,14 @@
-export default function SocialProfileDescription() {
+interface SocialProfileDescriptionProps {
+    description?: string,
+    className?: string,
+}
+
+export default function SocialProfileDescription(props: SocialProfileDescriptionProps) {
+    const { description, className } = props;
+
     return (
-        <div className="text-center">Descrição</div>
+        <p className={`text-center ${className}`}>
+            { description ? description : 'Descrição' }
+        </p>
     );
 }

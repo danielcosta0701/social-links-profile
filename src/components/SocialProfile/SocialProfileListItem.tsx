@@ -1,8 +1,29 @@
-export default function SocialProfileListItem() {
+import { ReactNode } from "react";
+
+interface SocialProfileListItemProps {
+    children?: ReactNode,
+    href?: string,
+    title?: string,
+    linkClassName?: string,
+    itemClassName?: string,
+}
+
+export default function SocialProfileListItem(props: SocialProfileListItemProps) {
+    const {
+        href,
+        title, 
+        linkClassName,
+        itemClassName,
+    } = props;
+
     return (
-        <li className="bg-gray-300 rounded-lg p-3 flex flex-row gap-3 hover:bg-slate-100 cursor-pointer">
-            <a href="#" className="text-green-400 w-full flex flex-row gap-3">
-                Link 1
+        <li className={`bg-gray-300 rounded-lg p-3 flex flex-row gap-3 hover:bg-slate-100 cursor-pointer ${itemClassName}`}>
+            <a 
+                href={href ? href : "#"} 
+                target={href ? "_blank" : "_self"}
+                className={`text-green-400 w-full flex flex-row gap-3 ${linkClassName}`}
+            >
+                { title ? title : "Sem título" }
             </a>
         </li>
     );
