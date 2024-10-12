@@ -2,8 +2,9 @@ import { ReactNode } from "react";
 
 interface SocialCardListItemProps {
     children?: ReactNode,
-    href?: string,
-    title?: string,
+    href: string,
+    title: string,
+    platform?: number,
     linkClassName?: string,
     itemClassName?: string,
 }
@@ -11,7 +12,8 @@ interface SocialCardListItemProps {
 export default function SocialCardListItem(props: SocialCardListItemProps) {
     const {
         href,
-        title, 
+        title,
+        platform,
         linkClassName,
         itemClassName,
     } = props;
@@ -24,6 +26,7 @@ export default function SocialCardListItem(props: SocialCardListItemProps) {
                 className={`text-green-400 w-full flex flex-row gap-3 ${linkClassName}`}
             >
                 { title ? title : "Sem título" }
+                { platform ? platform : "Plataforma não definida" }
             </a>
         </li>
     );

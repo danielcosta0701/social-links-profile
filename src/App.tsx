@@ -1,55 +1,48 @@
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import { SocialCard } from "./components/SocialCard/SocialCard";
-
-const SOCIAL_MOCK = {
-  name: "Daniel",
-  description: "Descrição",
-  message: "Mensagem",
-  profiles: [
-    {
-      id: 1,
-      platform: 'GitHub',
-      url: 'https://github.com/'
-    },
-    {
-      id: 2,
-      platform: 'Instagram',
-      url: 'https://instagram.com/'
-    },
-    {
-      id: 3,
-      platform: 'Spotify',
-      url: 'https://spotify.com'
-    }
-  ],
-};
+import { SOCIAL_MOCK } from "./mocks/social_mock";
 
 function App() {
+  const { 
+    name, 
+    description,
+    image,
+    message,
+    profiles,
+  } = SOCIAL_MOCK;
+
   return (
     <>
       <Main>
         <SocialCard.Root>
           <SocialCard.Header>
-            <SocialCard.Image />
+            <SocialCard.Image src={image} />
 
             <SocialCard.Bio>
-              <SocialCard.Name />
-              <SocialCard.Description />
+              <SocialCard.Name name={name}/>
+              <SocialCard.Description description={description} />
             </SocialCard.Bio>
           </SocialCard.Header>
 
           <SocialCard.Content>
             <SocialCard.List>
-              <SocialCard.ListItem />
-              <SocialCard.ListItem />
-              <SocialCard.ListItem />
+              {profiles.map(item => (
+                <SocialCard.ListItem
+                  key={item.id}
+                  href={item.url}
+                  title={item.platformName}
+                  platform={item.platformId}
+                />
+              ))}
             </SocialCard.List>
           </SocialCard.Content>
 
-          <SocialCard.Footer />
+          <SocialCard.Footer>
+            <SocialCard.Text text={message} />
+          </SocialCard.Footer>
         </SocialCard.Root>
-      </Main>    
+      </Main>
 
       <Footer />
     </>
