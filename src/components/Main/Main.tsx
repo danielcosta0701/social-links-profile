@@ -6,11 +6,14 @@ interface MainProps {
 }
 
 export default function Main(props: MainProps) {
-    const { children, className } = props;
+    const { 
+        children, 
+        className = "" 
+    } = props;
 
     return (
         <main className={`flex-grow flex justify-center items-center bg-red-300 p-4 ${className}`}>
-            { children ? children : "Sem conteúdo" }
+            { children || "Sem conteúdo" }
         </main>
     );
 }

@@ -4,11 +4,14 @@ interface SocialCardNameProps {
 }
 
 export default function SocialCardName(props: SocialCardNameProps) {
-    const { name, className } = props;
+    const { 
+        name, 
+        className = ""
+    } = props;
 
     return (
         <p className={`font-bold ${className}`}>
-            { name ? name : 'Nome' }
+            { name || 'Nome' }
         </p>
     );
 }

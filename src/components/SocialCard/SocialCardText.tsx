@@ -4,11 +4,14 @@ interface SocialCardTextProps {
 }
 
 export default function SocialCardText(props: SocialCardTextProps) {
-    const { text, className } = props;
+    const { 
+        text, 
+        className = "" 
+    } = props;
 
     return (
         <p className={`${className}`}>
-            { text ? text : "Sem texto" }
+            { text || "Sem texto" }
         </p>
     );
 }

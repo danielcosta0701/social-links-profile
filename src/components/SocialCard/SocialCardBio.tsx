@@ -6,11 +6,14 @@ interface SocialCardBioProps {
 }
 
 export default function SocialCardBio(props: SocialCardBioProps) {
-    const { children, className } = props;
+    const { 
+        children, 
+        className = ""
+    } = props;
 
     return (
         <div className={`flex flex-col justify-center items-center ${className}`}>
-            { children ? children : "Sem biografia" }
+            { children || "Sem biografia" }
         </div>
     );
 }

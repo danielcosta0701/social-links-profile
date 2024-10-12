@@ -6,11 +6,14 @@ interface SocialCardFooterProps {
 }
 
 export default function SocialCardFooter(props: SocialCardFooterProps) {
-    const { children, className } = props;
+    const { 
+        children, 
+        className = "" 
+    } = props;
 
     return (
         <div className={`flex flex-col bg-purple-300 p-3 ${className}`}>
-            { children ? children : "Sem conteúdo no rodapé" }
+            { children || "Sem conteúdo no rodapé" }
         </div>
     );
 }

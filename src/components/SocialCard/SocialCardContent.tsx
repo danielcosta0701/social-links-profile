@@ -6,11 +6,14 @@ interface SocialCardContentProps {
 }
 
 export default function SocialCardContent(props: SocialCardContentProps) {
-    const { children, className } = props;
+    const { 
+        children, 
+        className = ""
+    } = props;
 
     return (
         <div className={`flex flex-col bg-blue-300 ${className}`}>
-            {  children ? children : "Sem conteúdo" }
+            { children || "Sem conteúdo" }
         </div>
     );
 }

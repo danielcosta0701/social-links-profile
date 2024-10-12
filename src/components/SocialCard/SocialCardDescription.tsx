@@ -4,11 +4,14 @@ interface SocialCardDescriptionProps {
 }
 
 export default function SocialCardDescription(props: SocialCardDescriptionProps) {
-    const { description, className } = props;
+    const { 
+        description, 
+        className = "" 
+    } = props;
 
     return (
         <p className={`text-center ${className}`}>
-            { description ? description : 'Descrição' }
+            { description || 'Descrição' }
         </p>
     );
 }

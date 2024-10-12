@@ -6,11 +6,14 @@ interface FooterProps {
 }
 
 export default function Footer(props: FooterProps) {
-    const { children, className } = props;
+    const { 
+        children, 
+        className = "" 
+    } = props;
 
     return (
         <footer className={`flex flex-row justify-center items-center p-3 ${className}`}>
-            { children ? children : "Sem conteúdo" }
+            { children || "Sem conteúdo" }
         </footer>
     );
 }

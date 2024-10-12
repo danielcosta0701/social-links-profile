@@ -6,11 +6,14 @@ interface SocialCardRootProps {
 }
 
 export default function SocialCardRoot(props: SocialCardRootProps) {
-    const { children, className } = props;
+    const { 
+        children, 
+        className = ""
+    } = props;
 
     return (
         <div className={`bg-slate-500 rounded-lg p-5 min-w-80 flex flex-col gap-5 ${className}`}>
-            { children }
+            { children || "Sem conteúdo" }
         </div>
     );
 }
