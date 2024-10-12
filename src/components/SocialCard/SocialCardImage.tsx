@@ -1,11 +1,11 @@
-interface SocialProfileImageProps {
+interface SocialCardImageProps {
     href?: string,
     src?: string,
     alt?: string,
     className?: string,
 }
 
-export default function SocialProfileImage(props: SocialProfileImageProps) {
+export default function SocialCardImage(props: SocialCardImageProps) {
     const { href, src, alt, className } = props;
 
     return (

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-interface SocialProfileListItemProps {
+interface SocialCardListItemProps {
     children?: ReactNode,
     href?: string,
     title?: string,
@@ -8,7 +8,7 @@ interface SocialProfileListItemProps {
     itemClassName?: string,
 }
 
-export default function SocialProfileListItem(props: SocialProfileListItemProps) {
+export default function SocialCardListItem(props: SocialCardListItemProps) {
     const {
         href,
         title, 

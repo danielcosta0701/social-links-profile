@@ -1,9 +1,9 @@
-interface SocialProfileDescriptionProps {
+interface SocialCardDescriptionProps {
     description?: string,
     className?: string,
 }
 
-export default function SocialProfileDescription(props: SocialProfileDescriptionProps) {
+export default function SocialCardDescription(props: SocialCardDescriptionProps) {
     const { description, className } = props;
 
     return (

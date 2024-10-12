@@ -1,9 +1,9 @@
-interface SocialProfileNameProps {
+interface SocialCardNameProps {
     name?: string,
     className?: string,
 }
 
-export default function SocialProfileName(props: SocialProfileNameProps) {
+export default function SocialCardName(props: SocialCardNameProps) {
     const { name, className } = props;
 
     return (

@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
-interface SocialProfileRootProps {
+interface SocialCardRootProps {
     children: ReactNode,
     className?: string,
 }
 
-export default function SocialProfileRoot(props: SocialProfileRootProps) {
+export default function SocialCardRoot(props: SocialCardRootProps) {
     const { children, className } = props;
 
     return (

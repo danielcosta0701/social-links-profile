@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
-interface SocialProfileFooterProps {
+interface SocialCardFooterProps {
     children?: ReactNode,
     className?: string,
 }
 
-export default function SocialProfileFooter(props: SocialProfileFooterProps) {
+export default function SocialCardFooter(props: SocialCardFooterProps) {
     const { children, className } = props;
 
     return (

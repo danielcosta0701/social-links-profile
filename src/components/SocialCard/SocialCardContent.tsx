@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
-interface SocialProfileContentProps {
+interface SocialCardContentProps {
     children: ReactNode,
     className?: string,
 }
 
-export default function SocialProfileContent(props: SocialProfileContentProps) {
+export default function SocialCardContent(props: SocialCardContentProps) {
     const { children, className } = props;
 
     return (

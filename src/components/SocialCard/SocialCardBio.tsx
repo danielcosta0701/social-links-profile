@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 
-interface SocialProfileBioProps {
+interface SocialCardBioProps {
     children: ReactNode,
     className?: string,
 }
 
-export default function SocialProfileBio(props: SocialProfileBioProps) {
+export default function SocialCardBio(props: SocialCardBioProps) {
     const { children, className } = props;
 
     return (
