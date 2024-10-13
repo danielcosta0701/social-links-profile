@@ -1,50 +1,39 @@
-# React + TypeScript + Vite
+# pt-BR
+# Página de Links para Redes Sociais
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Página de links para redes sociais feita com **React.js**, **TypeScript** e **Tailwind CSS**. Segue boas práticas, como o **Composition Pattern** e **Conventional Commits**. Inclui ícones do **Font Awesome** e é desenvolvida com **Vite**.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **Font Awesome**
+- **Vite**
 
-## Expanding the ESLint configuration
+## Boas Práticas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Composition Pattern**
+- **Conventional Commits**
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+# en-US
+# Social Media Links Page
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+A social media links page built with **React.js**, **TypeScript**, and **Tailwind CSS**. It follows best practices, such as the **Composition Pattern** and **Conventional Commits**. It includes icons from **Font Awesome** and is developed with **Vite**.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Technologies Used
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **React.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **Font Awesome**
+- **Vite**
+
+## Best Practices
+
+- **Composition Pattern**
+- **Conventional Commits**
+
+
