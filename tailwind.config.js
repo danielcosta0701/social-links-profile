@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Montserrat', 'sans-serif'],
+      },
       colors: {
         github: "#181717",
         linkedin: "#0077B5",
