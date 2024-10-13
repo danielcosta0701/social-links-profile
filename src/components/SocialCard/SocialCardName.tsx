@@ -10,7 +10,7 @@ export default function SocialCardName(props: SocialCardNameProps) {
     } = props;
 
     return (
-        <p className={`font-bold ${className}`}>
+        <p className={`text-xl text-white font-bold ${className}`}>
             { name || 'Nome' }
         </p>
     );

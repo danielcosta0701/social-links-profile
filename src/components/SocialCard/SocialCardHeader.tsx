@@ -12,7 +12,7 @@ export default function SocialCardHeader(props: SocialCardHeaderProps) {
     } = props;
 
     return (
-        <div className={`flex flex-col justify-center items-center bg-blue-200 gap-3 ${className}`}>
+        <div className={`flex flex-col justify-center items-center gap-3 rounded-xl ${className}`}>
             { children || "Sem conteúdo no cabeçalho" }
         </div>
     );

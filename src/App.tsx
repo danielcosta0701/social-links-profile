@@ -12,12 +12,14 @@ function App() {
     profiles,
   } = SOCIAL_MOCK;
 
+  const defaultProfile = profiles[0].url;
+
   return (
     <>
       <Main>
         <SocialCard.Root>
           <SocialCard.Header>
-            <SocialCard.Image src={image} />
+            <SocialCard.Image src={image} href={defaultProfile} />
 
             <SocialCard.Bio>
               <SocialCard.Name name={name}/>

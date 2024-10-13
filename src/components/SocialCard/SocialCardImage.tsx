@@ -21,7 +21,7 @@ export default function SocialCardImage(props: SocialCardImageProps) {
             <img 
                 src={src || "Sem endereço da imagem"} 
                 alt={alt || "Sem descrição"}
-                className={`bg-red-300 rounded-full w-16 h-16 ${className}`} 
+                className={`w-16 h-16 bg-gray-700 rounded-full ${className}`} 
             />
         </a>
     );

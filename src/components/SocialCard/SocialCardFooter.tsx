@@ -12,7 +12,7 @@ export default function SocialCardFooter(props: SocialCardFooterProps) {
     } = props;
 
     return (
-        <div className={`flex flex-col bg-purple-300 p-3 ${className}`}>
+        <div className={`flex flex-col rounded-xl ${className}`}>
             { children || "Sem conteúdo no rodapé" }
         </div>
     );

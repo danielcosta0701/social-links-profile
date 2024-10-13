@@ -12,7 +12,7 @@ export default function Main(props: MainProps) {
     } = props;
 
     return (
-        <main className={`flex-grow flex justify-center items-center bg-red-300 p-4 ${className}`}>
+        <main className={`flex-grow flex justify-center items-center p-5 bg-gray-900 ${className}`}>
             { children || "Sem conteúdo" }
         </main>
     );

@@ -18,8 +18,8 @@ export const SocialCard = {
     Name: SocialCardName,
     Description: SocialCardDescription,
     Content: SocialCardContent,
+    Text: SocialCardText,
     List: SocialCardList,
     ListItem: SocialCardListItem,
     Footer: SocialCardFooter,
-    Text: SocialCardText
 };

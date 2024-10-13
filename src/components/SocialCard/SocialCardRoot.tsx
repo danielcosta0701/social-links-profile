@@ -12,7 +12,7 @@ export default function SocialCardRoot(props: SocialCardRootProps) {
     } = props;
 
     return (
-        <div className={`bg-slate-500 rounded-lg p-5 min-w-80 flex flex-col gap-5 ${className}`}>
+        <div className={`min-w-80 flex flex-col gap-5 p-5 bg-gray-800 rounded-lg ${className}`}>
             { children || "Sem conteúdo" }
         </div>
     );

@@ -10,7 +10,7 @@ export default function SocialCardText(props: SocialCardTextProps) {
     } = props;
 
     return (
-        <p className={`${className}`}>
+        <p className={`text-white text-center ${className}`}>
             { text || "Sem texto" }
         </p>
     );
