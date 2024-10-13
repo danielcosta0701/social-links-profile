@@ -13,7 +13,7 @@ export default function SocialCardContent(props: SocialCardContentProps) {
 
     return (
         <div className={`flex flex-col ${className}`}>
-            { children || "Sem conteúdo" }
+            { children ?? "Sem conteúdo" }
         </div>
     );
 }

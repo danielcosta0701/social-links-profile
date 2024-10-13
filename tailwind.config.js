@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        spotify: '#1DB954',
-        github: '#181717',
-        instagram: '#E1306C',
+        github: "#181717",
+        linkedin: "#0077B5",
+        spotify: "#1DB954",
       },
     },
   },

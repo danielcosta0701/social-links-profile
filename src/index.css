@@ -16,7 +16,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: #111827;
+    background-color: #171717;
 }
 
 #root {

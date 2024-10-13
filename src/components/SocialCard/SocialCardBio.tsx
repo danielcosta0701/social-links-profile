@@ -12,8 +12,8 @@ export default function SocialCardBio(props: SocialCardBioProps) {
     } = props;
 
     return (
-        <div className={`flex flex-col justify-center items-center ${className}`}>
-            { children || "Sem biografia" }
+        <div className={`flex flex-col justify-center items-center gap-1 ${className}`}>
+            { children ?? "Sem biografia" }
         </div>
     );
 }

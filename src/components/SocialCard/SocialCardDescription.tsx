@@ -11,7 +11,7 @@ export default function SocialCardDescription(props: SocialCardDescriptionProps)
 
     return (
         <p className={`text-white text-center ${className}`}>
-            { description || 'Descrição' }
+            { description ?? 'Descrição' }
         </p>
     );
 }

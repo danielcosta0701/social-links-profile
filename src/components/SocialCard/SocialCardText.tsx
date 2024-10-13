@@ -11,7 +11,7 @@ export default function SocialCardText(props: SocialCardTextProps) {
 
     return (
         <p className={`text-white text-center ${className}`}>
-            { text || "Sem texto" }
+            { text ?? "Sem texto" }
         </p>
     );
 }

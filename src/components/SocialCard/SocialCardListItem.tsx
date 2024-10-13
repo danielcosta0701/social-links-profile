@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faInstagram, faSpotify } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faSpotify } from '@fortawesome/free-brands-svg-icons';
 
 interface SocialCardListItemProps {
     children?: ReactNode;
@@ -19,28 +19,28 @@ export default function SocialCardListItem(props: SocialCardListItemProps) {
         linkClassName = "",
         itemClassName = "",
     } = props;
-
-    let platformIcon = 
+    
+    const platformIcon = 
         platform == 1 ? faGithub : 
-        platform == 2 ? faInstagram :
+        platform == 2 ? faLinkedin :
         platform == 3 ? faSpotify :
         null
 
-    let plaftormStyle = 
+    const plaftormStyle = 
         platform == 1 ? "hover:bg-github" :
-        platform == 2 ? "hover:bg-instagram" :
+        platform == 2 ? "hover:bg-linkedin" :
         platform == 3 ? "hover:bg-spotify" :
         null
-    
+        
     return (
-        <li className={`flex flex-row gap-3 bg-gray-700 rounded-lg transition-all duration-300 ease-in-out cursor-pointer ${plaftormStyle} ${itemClassName}`}>
+        <li className={`flex flex-row gap-3 bg-neutral-700 rounded-lg transition-all duration-300 ease-in-out cursor-pointer ${plaftormStyle} ${itemClassName}`}>
             <a 
-                href={href || "#"}
+                href={href ?? "#"}
                 target={href ? "_blank" : "_self"}
-                className={`w-full flex flex-row items-center gap-3 p-3 text-white font-bold ${linkClassName}`}
+                className={`w-full flex flex-row items-center gap-4 p-3 text-white font-bold ${linkClassName}`}
             >
-                { platformIcon && <FontAwesomeIcon icon={platformIcon} size="2x" /> }
-                { title || "Sem título" }
+                { platformIcon && <FontAwesomeIcon icon={platformIcon} size="1x" /> }
+                { title ?? "Sem título" }
             </a>
         </li>
     );

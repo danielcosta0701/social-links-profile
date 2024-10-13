@@ -13,7 +13,7 @@ export default function SocialCardList(props: SocialCardListProps) {
 
     return (
         <ul className={`flex flex-col gap-3 ${className}`}>
-            { children || "Sem itens na lista" }
+            { children ?? "Sem itens na lista" }
         </ul>
     );
 }

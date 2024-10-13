@@ -11,7 +11,7 @@ export default function SocialCardName(props: SocialCardNameProps) {
 
     return (
         <p className={`text-xl text-white font-bold ${className}`}>
-            { name || 'Nome' }
+            { name ?? 'Nome' }
         </p>
     );
 }

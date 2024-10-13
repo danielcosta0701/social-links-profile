@@ -1,5 +1,5 @@
 import Main from "./components/Main/Main";
-import Footer from "./components/Footer/Footer";
+import { Footer } from "./components/Footer/Footer";
 import { SocialCard } from "./components/SocialCard/SocialCard";
 import { SOCIAL_MOCK } from "./mocks/social_mock";
 
@@ -46,7 +46,11 @@ function App() {
         </SocialCard.Root>
       </Main>
 
-      <Footer />
+      <Footer.Root>
+        <Footer.Copyright>
+          Desenvolvido por <a href="https://github.com/danielcosta0701/social-links-profile" target="_blank" className="font-bold">Daniel Costa</a>
+        </Footer.Copyright>
+      </Footer.Root>
     </>
   )
 }
