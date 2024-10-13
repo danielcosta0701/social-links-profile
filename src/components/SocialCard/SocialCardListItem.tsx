@@ -27,9 +27,9 @@ export default function SocialCardListItem(props: SocialCardListItemProps) {
         null
 
     let plaftormStyle = 
-        platform == 1 ? "hover:bg-[#181717]" :
-        platform == 2 ? "hover:bg-[#C13584]" :
-        platform == 3 ? "hover:bg-[#1DB954]" :
+        platform == 1 ? "hover:bg-github" :
+        platform == 2 ? "hover:bg-instagram" :
+        platform == 3 ? "hover:bg-spotify" :
         null
     
     return (
