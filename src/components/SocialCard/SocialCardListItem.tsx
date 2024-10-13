@@ -19,7 +19,7 @@ export default function SocialCardListItem(props: SocialCardListItemProps) {
         linkClassName = "",
         itemClassName = "",
     } = props;
-    
+
     const platformIcon = 
         platform == 1 ? faGithub : 
         platform == 2 ? faLinkedin :
@@ -39,7 +39,7 @@ export default function SocialCardListItem(props: SocialCardListItemProps) {
                 target={href ? "_blank" : "_self"}
                 className={`w-full flex flex-row items-center gap-4 p-3 text-white font-bold ${linkClassName}`}
             >
-                { platformIcon && <FontAwesomeIcon icon={platformIcon} size="1x" /> }
+                { platformIcon && <FontAwesomeIcon icon={platformIcon} size="2x" fixedWidth /> }
                 { title ?? "Sem título" }
             </a>
         </li>

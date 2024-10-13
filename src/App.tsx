@@ -19,7 +19,11 @@ function App() {
       <Main>
         <SocialCard.Root>
           <SocialCard.Header>
-            <SocialCard.Image src={image} href={defaultProfile} />
+            <SocialCard.Image 
+              src={image} 
+              alt={name}
+              href={defaultProfile}
+            />
 
             <SocialCard.Bio>
               <SocialCard.Name name={name}/>
@@ -48,7 +52,7 @@ function App() {
 
       <Footer.Root>
         <Footer.Copyright>
-          Desenvolvido por <a href="https://github.com/danielcosta0701/social-links-profile" target="_blank" className="font-bold">Daniel Costa</a>
+          Desenvolvido por <a href="https://github.com/danielcosta0701" target="_blank" className="font-bold">Daniel Costa</a>
         </Footer.Copyright>
       </Footer.Root>
     </>

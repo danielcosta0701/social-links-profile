@@ -2,8 +2,8 @@ import { ReactNode } from "react";
 
 
 interface FooterCopyrightProps {
-    children: ReactNode,
-    className?: string,
+    children: ReactNode;
+    className?: string;
 }
 
 export default function FooterCopyright(props: FooterCopyrightProps) {

@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
 interface SocialCardFooterProps {
-    children?: ReactNode,
-    className?: string,
+    children: ReactNode;
+    className?: string;
 }
 
 export default function SocialCardFooter(props: SocialCardFooterProps) {

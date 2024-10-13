@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
 interface SocialCardHeaderProps {
-    children: ReactNode,
-    className?: string,
+    children: ReactNode;
+    className?: string;
 }
 
 export default function SocialCardHeader(props: SocialCardHeaderProps) {

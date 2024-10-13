@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
 interface SocialCardListProps { 
-    children: ReactNode,
-    className?: string,
+    children: ReactNode;
+    className?: string;
 }
 
 export default function SocialCardList(props: SocialCardListProps) {

@@ -1,15 +1,15 @@
 interface SocialCardImageProps {
-    href?: string,
-    src?: string,
-    alt?: string,
-    className?: string,
+    href: string;
+    src: string;
+    alt: string;
+    className?: string;
 }
 
 export default function SocialCardImage(props: SocialCardImageProps) {
     const { 
         href, 
         src, 
-        alt, 
+        alt,
         className = ""
     } = props;
 

@@ -1,6 +1,6 @@
 interface SocialCardDescriptionProps {
-    description?: string,
-    className?: string,
+    description: string;
+    className?: string;
 }
 
 export default function SocialCardDescription(props: SocialCardDescriptionProps) {

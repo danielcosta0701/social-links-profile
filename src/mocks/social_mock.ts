@@ -9,7 +9,7 @@ interface SocialMockData {
       platformName: string;
       url: string;
   }[];
-};
+}
 
 export const SOCIAL_MOCK: SocialMockData = {
     name: "Daniel Costa",

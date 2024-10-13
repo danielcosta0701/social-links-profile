@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
 interface FooterProps {
-    children?: ReactNode,
-    className?: string,
+    children?: ReactNode;
+    className?: string;
 }
 
 export default function FooterRoot(props: FooterProps) {
@@ -12,7 +12,7 @@ export default function FooterRoot(props: FooterProps) {
     } = props;
 
     return (
-        <footer className={`flex flex-row justify-center items-center p-3 ${className}`}>
+        <footer className={`flex flex-row justify-center items-center p-5 ${className}`}>
             { children ?? "Sem conteúdo" }
         </footer>
     );

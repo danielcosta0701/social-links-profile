@@ -1,6 +1,6 @@
 interface SocialCardNameProps {
-    name?: string,
-    className?: string,
+    name: string;
+    className?: string;
 }
 
 export default function SocialCardName(props: SocialCardNameProps) {
