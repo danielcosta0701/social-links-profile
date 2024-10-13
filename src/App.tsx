@@ -1,5 +1,5 @@
 import Main from "./components/Main/Main";
-import Footer from "./components/Footer/Footer";
+import { Footer } from "./components/Footer/Footer";
 import { SocialCard } from "./components/SocialCard/SocialCard";
 import { SOCIAL_MOCK } from "./mocks/social_mock";
 
@@ -12,12 +12,18 @@ function App() {
     profiles,
   } = SOCIAL_MOCK;
 
+  const defaultProfile = profiles[0].url;
+
   return (
     <>
       <Main>
         <SocialCard.Root>
           <SocialCard.Header>
-            <SocialCard.Image src={image} />
+            <SocialCard.Image 
+              src={image} 
+              alt={name}
+              href={defaultProfile}
+            />
 
             <SocialCard.Bio>
               <SocialCard.Name name={name}/>
@@ -44,7 +50,11 @@ function App() {
         </SocialCard.Root>
       </Main>
 
-      <Footer />
+      <Footer.Root>
+        <Footer.Copyright>
+          Desenvolvido por <a href="https://github.com/danielcosta0701" target="_blank" className="font-bold">Daniel Costa</a>
+        </Footer.Copyright>
+      </Footer.Root>
     </>
   )
 }

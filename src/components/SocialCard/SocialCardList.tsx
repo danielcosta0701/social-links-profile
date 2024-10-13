@@ -1,16 +1,19 @@
 import { ReactNode } from "react";
 
 interface SocialCardListProps { 
-    children: ReactNode,
-    className?: string,
+    children: ReactNode;
+    className?: string;
 }
 
 export default function SocialCardList(props: SocialCardListProps) {
-    const { children, className } = props;
+    const { 
+        children, 
+        className = ""
+    } = props;
 
     return (
         <ul className={`flex flex-col gap-3 ${className}`}>
-            { children ? children : "Sem itens na lista" }
+            { children ?? "Sem itens na lista" }
         </ul>
     );
 }

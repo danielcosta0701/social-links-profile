@@ -1,16 +1,7 @@
-import { ReactNode } from "react";
+import FooterRoot from "./FooterRoot";
+import FooterCopyright from "./FooterCopyright";
 
-interface FooterProps {
-    children?: ReactNode,
-    className?: string,
-}
-
-export default function Footer(props: FooterProps) {
-    const { children, className } = props;
-
-    return (
-        <footer className={`flex flex-row justify-center items-center p-3 ${className}`}>
-            { children ? children : "Sem conteúdo" }
-        </footer>
-    );
+export const Footer = {
+    Root: FooterRoot,
+    Copyright: FooterCopyright
 }

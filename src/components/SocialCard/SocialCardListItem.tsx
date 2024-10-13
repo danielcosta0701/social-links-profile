@@ -1,12 +1,14 @@
 import { ReactNode } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faSpotify } from '@fortawesome/free-brands-svg-icons';
 
 interface SocialCardListItemProps {
-    children?: ReactNode,
-    href: string,
-    title: string,
-    platform?: number,
-    linkClassName?: string,
-    itemClassName?: string,
+    children?: ReactNode;
+    href: string;
+    title: string;
+    platform?: number;
+    linkClassName?: string;
+    itemClassName?: string;
 }
 
 export default function SocialCardListItem(props: SocialCardListItemProps) {
@@ -14,19 +16,31 @@ export default function SocialCardListItem(props: SocialCardListItemProps) {
         href,
         title,
         platform,
-        linkClassName,
-        itemClassName,
+        linkClassName = "",
+        itemClassName = "",
     } = props;
 
+    const platformIcon = 
+        platform == 1 ? faGithub : 
+        platform == 2 ? faLinkedin :
+        platform == 3 ? faSpotify :
+        null
+
+    const plaftormStyle = 
+        platform == 1 ? "hover:bg-github" :
+        platform == 2 ? "hover:bg-linkedin" :
+        platform == 3 ? "hover:bg-spotify" :
+        null
+        
     return (
-        <li className={`bg-gray-300 rounded-lg p-3 flex flex-row gap-3 hover:bg-slate-100 cursor-pointer ${itemClassName}`}>
+        <li className={`flex flex-row gap-3 bg-neutral-700 rounded-lg transition-all duration-300 ease-in-out cursor-pointer ${plaftormStyle} ${itemClassName}`}>
             <a 
-                href={href ? href : "#"} 
+                href={href ?? "#"}
                 target={href ? "_blank" : "_self"}
-                className={`text-green-400 w-full flex flex-row gap-3 ${linkClassName}`}
+                className={`w-full flex flex-row items-center gap-4 p-3 text-white font-bold ${linkClassName}`}
             >
-                { title ? title : "Sem título" }
-                { platform ? platform : "Plataforma não definida" }
+                { platformIcon && <FontAwesomeIcon icon={platformIcon} size="2x" fixedWidth /> }
+                { title ?? "Sem título" }
             </a>
         </li>
     );

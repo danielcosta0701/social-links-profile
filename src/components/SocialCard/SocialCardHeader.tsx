@@ -1,16 +1,19 @@
 import { ReactNode } from "react";
 
 interface SocialCardHeaderProps {
-    children: ReactNode,
-    className?: string,
+    children: ReactNode;
+    className?: string;
 }
 
 export default function SocialCardHeader(props: SocialCardHeaderProps) {
-    const { children, className } = props;
+    const { 
+        children, 
+        className = "" 
+    } = props;
 
     return (
-        <div className={`flex flex-col justify-center items-center bg-blue-200 gap-3 ${className}`}>
-            { children ? children : "Sem conteúdo no cabeçalho" }
+        <div className={`flex flex-col justify-center items-center gap-3 rounded-lg ${className}`}>
+            { children ?? "Sem conteúdo no cabeçalho" }
         </div>
     );
 }
