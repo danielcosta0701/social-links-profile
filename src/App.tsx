@@ -28,6 +28,7 @@ function App() {
             <SocialCard.Bio>
               <SocialCard.Name name={name}/>
               <SocialCard.Description description={description} />
+              <SocialCard.Location location="São Paulo, SP" />
             </SocialCard.Bio>
           </SocialCard.Header>
 
