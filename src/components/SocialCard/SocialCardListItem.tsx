@@ -33,7 +33,7 @@ export default function SocialCardListItem(props: SocialCardListItemProps) {
         null
         
     return (
-        <li className={`flex flex-row gap-3 bg-neutral-700 rounded-lg transition-all duration-300 ease-in-out cursor-pointer ${plaftormStyle} ${itemClassName}`}>
+        <li className={`flex flex-row gap-3 bg-gray-700 rounded-lg transition-all duration-300 ease-in-out cursor-pointer ${plaftormStyle} ${itemClassName}`}>
             <a 
                 href={href ?? "#"}
                 target={href ? "_blank" : "_self"}

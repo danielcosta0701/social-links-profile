@@ -2,6 +2,7 @@ import SocialCardRoot from "./SocialCardRoot";
 import SocialCardHeader from "./SocialCardHeader";
 import SocialCardImage from "./SocialCardImage";
 import SocialCardBio from "./SocialCardBio";
+import SocialCardLocation from "./SocialCardLocation";
 import SocialCardName from "./SocialCardName";
 import SocialCardDescription from "./SocialCardDescription";
 import SocialCardContent from "./SocialCardContent";
@@ -15,6 +16,7 @@ export const SocialCard = {
     Header: SocialCardHeader,
     Image: SocialCardImage,
     Bio: SocialCardBio,
+    Location: SocialCardLocation,
     Name: SocialCardName,
     Description: SocialCardDescription,
     Content: SocialCardContent,
